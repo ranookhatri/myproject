@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page261/mo
 WORKDIR /var/www/html
 RUN unzip mountain.zip
 RUN cp -rvf mountain/* .
-RUN rm -rf _MACOSX mountain mountain.zip
+RUN rm -rf mountain mountain.zip
 CMD ["/user/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
