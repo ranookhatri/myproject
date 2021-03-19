@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip mountain.zip
 RUN cp -rvf mountain/* .
 RUN rm -rf mountain mountain.zip
-CMD ["/user/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
